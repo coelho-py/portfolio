@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head> 
+ <title>Tentativa De Fazer Cachorrinhos</title>
+  <style type="text/css"> 
+     #Centro { 
+     position: fixed;
+     top:25% ;
+     left:50%;
+     transform: translate(-50%, -50%);
+	}
+	 #result {
+	 position: fixed;
+	 top: 42%;
+	 left: 30%;
+	}
+  body {
+	background-color: gray;
+	font-family: sans-serif;
+    } 
+ 
+  .Fix {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+	
+	.Guia {
+	  top:  15%;
+      left: 50%;
+      font-size: larger;
+      color: white;
+    }
+    .Guia {
+      background-color: #bd91e4;
+       border: 1px solid #CCCCCC;
+       border-radius: 5px;
+       padding: 20px;
+	   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+	.Guia h2 {
+		color: #0099CC;
+		margin: 0;
+		font-size: 18px;
+    } 
+	.Guia p {
+		color: #666666;
+		font-size: 14px;
+	}
+
+  </style>
+  <head>
+ <script>
+ 
+  function Gerar (){ 
+   var Doge = new Array()
+   
+   Doge[0] = "https://wi.wallpapertip.com/wsimgs/156-1565522_puppies-desktop-wallpaper-desktop-background-puppies.jpg";
+   Doge[1] = "https://image.cachorrogato.com.br/textimages/cachorrinho-ideal-pug";
+   Doge[2] = "https://img.freepik.com/fotos-gratis/adoravel-cachorro-basenji-marrom-e-branco-sorrindo-e-dando-mais-uns-cinco-isolado-no-branco_346278-1657.jpg";
+   Doge[3] = "https://i.imgur.com/7ITRJXx.png";
+   Doge[4] = "https://i.imgur.com/MvVA8uO.jpeg";
+   Doge[5] = "http://papeisdeparedeparacelular.org/images/cachorrinhos-filhotes2.jpg";
+   var number = Math.floor(Math.random()*Doge.length);
+   return document.getElementById("result").innerHTML = '<img src="'+Doge[number]+'" />';  
+} 
+</script>
+ <body> 
+ <div class="Fix Guia">Clique no Botao para gerar um doguinho diferente</div>
+<center><h2 style="color:purple"> Doge Generate </h2> </center>
+<div id="Centro">
+ <button onclick = "setInterval(Gerar, 2000)" > Gerar </button>
+ </div>
+<br> <br> 
+<span id="result" align="center"> </span>   
+</body>
+</html>

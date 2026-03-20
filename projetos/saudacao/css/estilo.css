@@ -1,0 +1,36 @@
+:root{
+    --corfundo: rgb(240, 240, 240);
+    --cor: rgb(127, 90, 320);
+}
+
+body{
+    background-color: var(--corfundo);
+}
+
+.cotainer{
+    width: 920px;
+    height: 720px;
+    display: flex;
+    align-content: center;
+    margin: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px;
+}
+
+.menu{
+    display: flex;
+    padding: 50px;
+    width: 240px;
+    margin-left: 30%;
+    flex-direction: column;
+}
+
+button{
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--cor);
+    border-radius: 5px;
+}
