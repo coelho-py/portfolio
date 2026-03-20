@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://coelho-py.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,6 +12,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
+    "postbuild": "node scripts/copy404.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
