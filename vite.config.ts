@@ -5,8 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Configuração para GitHub Pages - substitua 'seu-usuario' pelo seu username do GitHub
-  base: process.env.NODE_ENV === 'production' ? '/portfolio-ia/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
   server: {
     host: "::",
     port: 8080,
