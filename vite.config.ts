@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
+  // GitHub Pages normalmente hospeda em subpasta; use o `mode` do Vite para ser consistente
+  base: mode === "production" ? "/portfolio/" : "/",
   server: {
     host: "::",
     port: 8080,
